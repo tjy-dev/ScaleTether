@@ -1,0 +1,235 @@
+{
+  "distribution": "ScaleTether identifiers and portable fixture paths; source hashes refer to the original source snapshot.",
+  "evaluation_archive_sha256": "f18499bc4305f1ce9e022c766fe34b1ab1bc8567f0deff96860f4aee077c818a",
+  "schema": "scaletether-source-provenance-v1",
+  "source_files": [
+    {
+      "distributed_sha256": "1c26185684b6ea59299d1614801fd8a8574eb32d45fc9c553eff98f47e1c6c1f",
+      "path": "scaletether/astra_service.py",
+      "source_sha256": "8e7642614862e6ded7080e785c4a7948a9ae92ab54bc67cdfea4779140d7e1dc"
+    },
+    {
+      "distributed_sha256": "b188c7a10077cfe16fe7c8a2eab3d368ee5eb4172acf2b407e89184cbc6e560a",
+      "path": "scaletether/calibration.py",
+      "source_sha256": "b188c7a10077cfe16fe7c8a2eab3d368ee5eb4172acf2b407e89184cbc6e560a"
+    },
+    {
+      "distributed_sha256": "8a12cb0b3965493d15a204154cf6d94c1020e9c8b5d1db5079ba23f5f5418c1f",
+      "path": "scaletether/chakra.py",
+      "source_sha256": "aa93a38337e1c874a44d9fb9fbd80fac3eff64c23b9aba004ea1c2b000945546"
+    },
+    {
+      "distributed_sha256": "9700acb29eac70595763cc1fa16e855e50c096faabe5cb94432872122154c209",
+      "path": "scaletether/compute_region.py",
+      "source_sha256": "9700acb29eac70595763cc1fa16e855e50c096faabe5cb94432872122154c209"
+    },
+    {
+      "distributed_sha256": "ca53c6f682e4c3404cb8c358f3dd0b515588e09f7b60b8db9662630e7f8d92e2",
+      "path": "scaletether/compute_transfer.py",
+      "source_sha256": "ca53c6f682e4c3404cb8c358f3dd0b515588e09f7b60b8db9662630e7f8d92e2"
+    },
+    {
+      "distributed_sha256": "c5763f42cf3078da9d5a774b2285f3c854b973a408bf133553c567cf10da7b11",
+      "path": "scaletether/config.py",
+      "source_sha256": "edb08a698b5e301b1d0c18d0d9bb7ae682bf13b3d94600c41a9eee3c95dc124f"
+    },
+    {
+      "distributed_sha256": "b27129445fb531272d08c1b1556e0c40ff146cc1436f525f923397a2933d1d6b",
+      "path": "scaletether/framework_counterfactual.py",
+      "source_sha256": "8926df08daf2079b29b7f6d81505e69de84e1307c3746c3d0b6d370496a2a8f1"
+    },
+    {
+      "distributed_sha256": "2abd5fe4627569c528f4cc8cba76aabd0fa13357ebf17de8fe98919721ccb798",
+      "path": "scaletether/infragraph.py",
+      "source_sha256": "482d0091e0ec0874dc474438aef2809f1af8ae7e17be05b3d0a799e997d83a43"
+    },
+    {
+      "distributed_sha256": "de7df7b3fc21943c8c197c9f62ed77548a105081f4b5c9269f92f71764e93c73",
+      "path": "scaletether/megatron_adapter.py",
+      "source_sha256": "d5a59a26af02e1411d68ca372dc71d9c7eb843afdde5c2f5166e6f969f60b48b"
+    },
+    {
+      "distributed_sha256": "aec160ecb648d533d0e659bab02d939039b230db3efc2c4515be551c8f087262",
+      "path": "scaletether/megatron_layout_h100_validation.py",
+      "source_sha256": "5dab2b667dd2b163063d979c565135253370790278356dcbfcc9ed51143b3713"
+    },
+    {
+      "distributed_sha256": "279b5c2f7d13e728d40b8c5dd79f57b8ed7b86211f96c21512598a341a2ce3f3",
+      "path": "scaletether/megatron_layout_timing_score.py",
+      "source_sha256": "5e6a1d55bf1065c2870a4c38b397249187f04ea062c094e77a3a3bd6476cb7da"
+    },
+    {
+      "distributed_sha256": "be7218e0ec49bba07244f72287bed2f1fdb16110cc1d17021b298c84f970a131",
+      "path": "scaletether/megatron_layout_transform.py",
+      "source_sha256": "cb8ef5eff06eeebea7d5054b9d60a4eab334efe67febd408e53e5d6bd56b3e9e"
+    },
+    {
+      "distributed_sha256": "1e68fac63f9206d6d25a5cb4cdb9a65ab4678c2d872f0d6daf36e6d94f31fbc9",
+      "path": "scaletether/megatron_tp_transform.py",
+      "source_sha256": "ca3645fd4ca58f20940f499e64eb65e2c20ba445b7f1c68b555cca82aa1afe07"
+    },
+    {
+      "distributed_sha256": "8d38d3fe8b5832fbffd45091eb9c98afe422590074c7d378afa9500c2962e833",
+      "path": "scaletether/megatron_tp_validation.py",
+      "source_sha256": "0ee7bb6859bf1b25822104b6b315c0532c970be6e1a45b4d441249007060e10b"
+    },
+    {
+      "distributed_sha256": "111a1656556221ad11d53050306af9c95261129a6df40e02f4d9599738e21877",
+      "path": "scaletether/megatron_transformer_comparison.py",
+      "source_sha256": "5b136dd4deb9f4e325b87c2bb2d59663eefc1c9a061521eb9a82162b668ba8c8"
+    },
+    {
+      "distributed_sha256": "caed9ae0162307fbd3accbea2449760bad965f6e6558e5e185514c138deba72a",
+      "path": "scaletether/megatron_transformer_family.py",
+      "source_sha256": "5e48c9811d28a828fd37e499bfa521245df2305bd7f8b72f51030daee02d40f2"
+    },
+    {
+      "distributed_sha256": "756bd13e837d405142ef1384b8a062262657e8bdaa625bfdb47afb8d75b7583c",
+      "path": "scaletether/megatron_transformer_graph.py",
+      "source_sha256": "7b377807f2255077e25e2d7d2ac1d41c555b05bf224112f55801faa9ddc4d081"
+    },
+    {
+      "distributed_sha256": "807da224d2ed52a452f8a7490bb5f332021d9f71aa6c2d05b41ddff9a24940e0",
+      "path": "scaletether/megatron_transformer_rules.py",
+      "source_sha256": "72d6d032583077b0b4e643b326a3ba32699340b5726ca0a8df65fb3e5f77740c"
+    },
+    {
+      "distributed_sha256": "c86934643c37f152a4a7d93adea19e56020317d66dc026716fcd2037ab101863",
+      "path": "scaletether/megatron_transformer_target_validation.py",
+      "source_sha256": "9a76ba103457f4f5de405f2103391e7f3d617b125e483e1757138364aa3cf36d"
+    },
+    {
+      "distributed_sha256": "fe5849484fab90d1fa91ce66553078b7a28a6668bc6bdcd3e0dad175260cb9c7",
+      "path": "scaletether/nccl_policy.py",
+      "source_sha256": "fe5849484fab90d1fa91ce66553078b7a28a6668bc6bdcd3e0dad175260cb9c7"
+    },
+    {
+      "distributed_sha256": "b2a06ffcce8a2cfb99e020f83cb4fc761afe549db481618fcc9859d03c1ceb08",
+      "path": "scaletether/network_calibration.py",
+      "source_sha256": "5d44cf88e0e403b90864937b975a59c39a97a64f8d7f3fb2fd67de33cd37309d"
+    },
+    {
+      "distributed_sha256": "c7f54cc37aa29cd8a0ae4f90a108f3c56359a1587f176e2c9facf0f8295253fa",
+      "path": "scaletether/pipeline.py",
+      "source_sha256": "e41929220aff4a9315b7aa8e86f6ddd46b0a3694bc571ca8da60891c17daff94"
+    },
+    {
+      "distributed_sha256": "f16e3db58827fb0676e08a730d3afbcdc9cdc4046103b1a4504936becaf1b24b",
+      "path": "scaletether/planner_contract.py",
+      "source_sha256": "f16e3db58827fb0676e08a730d3afbcdc9cdc4046103b1a4504936becaf1b24b"
+    },
+    {
+      "distributed_sha256": "46b6a951ced2e0aa31c3e69a669b2d08e69ba5ac27103aa91711c849a0c0758b",
+      "path": "scaletether/research/fixed_resource_megatron_search_v2.py",
+      "source_sha256": "62624e2b8d6f6398b89b8f3a0366812fb9a8c8ba48cf3423aae45dcadee739a7"
+    },
+    {
+      "distributed_sha256": "7e1d50a4357dccc6763e3736cc303a6b4fc610869051142cfe9736e49199cc70",
+      "path": "scaletether/research/fixed_resource_megatron_search_v4.py",
+      "source_sha256": "abc36036352e3d4f4ed68236d58912d62e7730cc965be84c31a37aafc8c6e558"
+    },
+    {
+      "distributed_sha256": "ddddcd1d161f20492011774f6f85b8c10be5fb2a20206e1444ca938d09414291",
+      "path": "scaletether/research/fixed_resource_megatron_search_v5.py",
+      "source_sha256": "69177cb7a9aaa21180b4601935e69df29e2a8379c768cf864e33e22c10117460"
+    },
+    {
+      "distributed_sha256": "c63f8970a30bc214d59df3338f55cb1f875a46e551c7ffa818e274b5a7126d96",
+      "path": "scaletether/research/fixed_resource_megatron_search_v6.py",
+      "source_sha256": "9b798bec59dcd23c699bb1f46419d415838e3ab831ad9b6ba28e312794ae8dde"
+    },
+    {
+      "distributed_sha256": "8d248cfbd9dda7177319d1d8f794ff6571013c35f613af67ba08a01ca2c87153",
+      "path": "scaletether/research/fixed_resource_megatron_search_v7.py",
+      "source_sha256": "ca6cc5e9366931183bd8cf13ea9ed5306959d9a88d444c00f56cac82c15c24fc"
+    },
+    {
+      "distributed_sha256": "627464de405e8f6b2d5e39a6e53e152f56a0ef655592cd44a5b0a518ab2b3b5a",
+      "path": "scaletether/research/fixed_resource_megatron_search_v8.py",
+      "source_sha256": "c166e86d9b7768ce5d9aca10c02854e764059a867b243145bef505418df78880"
+    },
+    {
+      "distributed_sha256": "e81aa5446d6a5afa329a97ef45f8d0270ffd821ce35916c3830d6c7a3c62803f",
+      "path": "scaletether/research/fixed_resource_megatron_search_v8_paper.py",
+      "source_sha256": "f00c0cffb058f4bf94c17f4c54e41ff4204824fb47c5393189f14b7282a6b2ef"
+    },
+    {
+      "distributed_sha256": "fdec54f432bb05c947328b2a74c6c7e1429b54d66c6d5f97f41bdc456b246be0",
+      "path": "scaletether/schema.py",
+      "source_sha256": "fdec54f432bb05c947328b2a74c6c7e1429b54d66c6d5f97f41bdc456b246be0"
+    },
+    {
+      "distributed_sha256": "5d8bc503b136f409b9c0d90f46e33505cdf891972cc2a5bedaf76e0055dcd78a",
+      "path": "scaletether/simulator.py",
+      "source_sha256": "5d8bc503b136f409b9c0d90f46e33505cdf891972cc2a5bedaf76e0055dcd78a"
+    },
+    {
+      "distributed_sha256": "e70dede9a4e552777bceb619f1247de34b0de09117f4f7af42ad5c2257ebb6dc",
+      "path": "scaletether/uncertainty.py",
+      "source_sha256": "d176dbc440072cd95591c44b28ddfb8465fe104c55a4de5613216584f1b92a33"
+    },
+    {
+      "distributed_sha256": "f6739aaf65bf86bdd4a7e525beebcab043662e2aad2b8c17aece476496d9c81e",
+      "path": "tests/test_chakra.py",
+      "source_sha256": "97b241e3e1504641853dc68b8554f333b746a2912780d297865e677bbe9a53e6"
+    },
+    {
+      "distributed_sha256": "44ed40ba7f1974c873e15cf4791da164dc443f83420ffb19182c95f3b933695e",
+      "path": "tests/test_fixed_resource_megatron_search_v8_paper.py",
+      "source_sha256": "37eafb4cd5a099afae8822d34fc7f867a9474dff39f6c9d207d41a5bc95a8970"
+    },
+    {
+      "distributed_sha256": "fb6c20cf056c2666eb0c4be59b8144b1a09f79f5d66c8aa91dcf3678af45d918",
+      "path": "tests/test_framework_counterfactual.py",
+      "source_sha256": "8c2983e61e19e193f817379a394ab513ef0b33cfc0f2df436a298e14009b2728"
+    },
+    {
+      "distributed_sha256": "07a65e377298fa0aa24355746597dcd42db4d991afcbb9fbea8c72ee3044e13a",
+      "path": "tests/test_megatron_layout_timing_score.py",
+      "source_sha256": "5c50fa0d181f8685b05ba7a80002aefe8ae5aa56d3191a6f66e12a283a273178"
+    },
+    {
+      "distributed_sha256": "8690b7cde4acd5a053b6f880ae49cd1b5dc0bb8afb7b4b23409b1206acb8f865",
+      "path": "tests/test_megatron_layout_transform.py",
+      "source_sha256": "afdd09ea90f2d69ab0b1d302922d0f72febbc96b49bbf16c9b8216902e10408e"
+    },
+    {
+      "distributed_sha256": "71230ec67a586a0e9c7dad7b5f30e48883fb07ba32d98d7f026c6f000cd3a355",
+      "path": "tests/test_megatron_tp_transform.py",
+      "source_sha256": "765ae243e2dea132194208b853689e4deffd3851d8fbc12ec0f0a6c00660288f"
+    },
+    {
+      "distributed_sha256": "fe25f1b6c5370fcab1272b0333ea65e2f092b10d44520fa35ca18dbbd422422e",
+      "path": "tests/test_megatron_transformer_comparison.py",
+      "source_sha256": "686cda6eb507632f264177ea1dafb5e764d232a51162e5d8d83f4df606bbd7f1"
+    },
+    {
+      "distributed_sha256": "6c63cddbe14d3c0a689c6a0d47298e41972bc704ece9327c05f29544064392ce",
+      "path": "tests/test_megatron_transformer_family.py",
+      "source_sha256": "6766ab9fa6ce4d8609821e258ed4e3f9f46e6c3793055a70b292dcd57d113795"
+    },
+    {
+      "distributed_sha256": "c9a547987217c82aaac632b6994f1d5938247a18fcf735666bab594955fe6179",
+      "path": "tests/test_megatron_transformer_graph.py",
+      "source_sha256": "705b545a2ebf4051b35ffbe2bd4ff59bf8e72359b14bc4968f671b51afc08593"
+    },
+    {
+      "distributed_sha256": "bed38189bbb3ac108d805c3fa30fa0e68bb3308c2b583481ed5601b9f36923f1",
+      "path": "tests/test_megatron_transformer_rules.py",
+      "source_sha256": "ccfe0b8bb3e39ceefdacce37e91203d31944855af1173bc74f34c10f71f018ff"
+    },
+    {
+      "distributed_sha256": "f0d5c8fb538d0d71251a784a1c39810f11db166dd9eec1c35af0f0c6ec555483",
+      "path": "tests/test_megatron_transformer_target_validation.py",
+      "source_sha256": "508a067521d298a52ca8117632def198cc2ec6d1f328d909d7c57564c374827a"
+    },
+    {
+      "distributed_sha256": "b223553731b8843f98575e20b6a41d9745e0e580fb11640ea78654c6e6d805f5",
+      "path": "tests/test_planner_contract.py",
+      "source_sha256": "e1fc57f7527751a9208dc3d34951490057e7c0f0b66bd3b2edaa44c7d77667cb"
+    }
+  ],
+  "source_revision": "8ab130126dddd6e5c27e928fd3bc732781fb00bc",
+  "source_tree_dirty": true,
+  "workload_archive_sha256": "2289cae8ea29404e6b9047a88abcab859892109a63ae30455ae8a8d4922b4c8a"
+}

@@ -1,0 +1,91 @@
+{
+  "anchors": [
+    {
+      "id": "A",
+      "parallelism": {"dp": 1, "pp": 1, "tp": 2},
+      "pipeline_microbatches": 1,
+      "sequence_length": 256
+    },
+    {
+      "id": "B",
+      "parallelism": {"dp": 1, "pp": 1, "tp": 2},
+      "pipeline_microbatches": 1,
+      "sequence_length": 320
+    }
+  ],
+  "artifact_policy": {
+    "evaluation_target_time_is_acquisition_savings": false,
+    "prediction_must_precede_target_execution": true,
+    "target_may_become_anchor": false
+  },
+  "domain": {
+    "attention_heads": 8,
+    "attention_mask": "causal",
+    "dropout": 0.0,
+    "ffn_hidden_size": 512,
+    "framework": "megatron-core",
+    "framework_commit": "f8e1ac64b0587ff7002a18fbaa5ecdeaeb8491be",
+    "hidden_size": 256,
+    "num_layers": 2,
+    "parameter_dtype": "float32",
+    "target": "h100",
+    "transformer_engine": false
+  },
+  "safety": {
+    "minimum_counterexamples": 72,
+    "minimum_per_dimension": 24,
+    "required_false_admissions": 0
+  },
+  "schema": "scaletether-level2-h100-transformer-family-v1",
+  "status": "frozen-before-heldout-transformer-target-execution",
+  "targets": [
+    {
+      "global_batch_size": 1,
+      "id": "TP-A",
+      "parallelism": {"dp": 1, "pp": 1, "tp": 4},
+      "pipeline_microbatches": 1,
+      "sequence_length": 256
+    },
+    {
+      "global_batch_size": 1,
+      "id": "TP-B",
+      "parallelism": {"dp": 1, "pp": 1, "tp": 4},
+      "pipeline_microbatches": 1,
+      "sequence_length": 320
+    },
+    {
+      "global_batch_size": 2,
+      "id": "DP-A",
+      "parallelism": {"dp": 2, "pp": 1, "tp": 2},
+      "pipeline_microbatches": 1,
+      "sequence_length": 256
+    },
+    {
+      "global_batch_size": 2,
+      "id": "DP-B",
+      "parallelism": {"dp": 2, "pp": 1, "tp": 2},
+      "pipeline_microbatches": 1,
+      "sequence_length": 320
+    },
+    {
+      "global_batch_size": 2,
+      "id": "PP-A",
+      "parallelism": {"dp": 1, "pp": 2, "tp": 2},
+      "pipeline_microbatches": 2,
+      "sequence_length": 256
+    },
+    {
+      "global_batch_size": 4,
+      "id": "PP-B",
+      "parallelism": {"dp": 1, "pp": 2, "tp": 2},
+      "pipeline_microbatches": 4,
+      "sequence_length": 320
+    }
+  ],
+  "timing_thresholds": {
+    "median_absolute_iteration_error_fraction": 0.15,
+    "median_absolute_overlap_error_percentage_points": 10.0,
+    "median_absolute_phase_error_fraction": 0.20,
+    "structural_gate_precedes_timing": true
+  }
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use ScaleTether, please cite the accompanying paper."
+type: software
+title: ScaleTether
+version: 0.1.0
+authors:
+  - family-names: Tajima
+    given-names: Yukito
+  - family-names: Fujii
+    given-names: Kazuki
+  - family-names: Yokota
+    given-names: Rio
+repository-code: "https://github.com/tjy-dev/ScaleTether"
+url: "https://github.com/tjy-dev/ScaleTether"
+preferred-citation:
+  type: conference-paper
+  title: "ScaleTether: Graph Rewriting and Selective Timing Prediction for Megatron Parallelism"
+  authors:
+    - family-names: Tajima
+      given-names: Yukito
+    - family-names: Fujii
+      given-names: Kazuki
+    - family-names: Yokota
+      given-names: Rio
+  year: 2026
+  collection-title: "AgenticAI4HPC, SC26"
+  url: "https://github.com/tjy-dev/ScaleTether"

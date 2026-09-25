@@ -1,0 +1,102 @@
+{
+  "schema": "scaletether-level2-h100-transformer-family-v7",
+  "status": "frozen-before-v15-allocation-conditioned-heldouts",
+  "study_id": "level2-h100-transformer-study-v15-allocation-conditioned",
+  "domain": {
+    "framework": "megatron-core",
+    "framework_commit": "f8e1ac64b0587ff7002a18fbaa5ecdeaeb8491be",
+    "target": "h100",
+    "num_layers": 2,
+    "hidden_size": 1024,
+    "ffn_hidden_size": 4096,
+    "attention_heads": 16,
+    "parameter_dtype": "float32",
+    "micro_batch_size": 1,
+    "attention_mask": "causal",
+    "dropout": 0.0,
+    "transformer_engine": false
+  },
+  "anchors": [
+    {
+      "id": "K1024",
+      "sequence_length": 1024,
+      "parallelism": {"tp": 2, "pp": 1, "dp": 1},
+      "global_batch_size": 1,
+      "pipeline_microbatches": 1
+    },
+    {
+      "id": "K2048",
+      "sequence_length": 2048,
+      "parallelism": {"tp": 2, "pp": 1, "dp": 1},
+      "global_batch_size": 1,
+      "pipeline_microbatches": 1
+    }
+  ],
+  "targets": [
+    {
+      "id": "TP-A", "display_id": "TP-1024", "sequence_length": 1024,
+      "parallelism": {"tp": 4, "pp": 1, "dp": 1},
+      "global_batch_size": 1, "pipeline_microbatches": 1,
+      "change": "tensor-parallel-degree-only"
+    },
+    {
+      "id": "TP-B", "display_id": "TP-2048", "sequence_length": 2048,
+      "parallelism": {"tp": 4, "pp": 1, "dp": 1},
+      "global_batch_size": 1, "pipeline_microbatches": 1,
+      "change": "tensor-parallel-degree-only"
+    },
+    {
+      "id": "DP-A", "display_id": "DP-1024", "sequence_length": 1024,
+      "parallelism": {"tp": 2, "pp": 1, "dp": 2},
+      "global_batch_size": 2, "pipeline_microbatches": 1,
+      "change": "data-parallel-weak-scaling"
+    },
+    {
+      "id": "DP-B", "display_id": "DP-2048", "sequence_length": 2048,
+      "parallelism": {"tp": 2, "pp": 1, "dp": 2},
+      "global_batch_size": 2, "pipeline_microbatches": 1,
+      "change": "data-parallel-weak-scaling"
+    },
+    {
+      "id": "PP-A", "display_id": "PP4-1024", "sequence_length": 1024,
+      "parallelism": {"tp": 2, "pp": 2, "dp": 1},
+      "global_batch_size": 4, "pipeline_microbatches": 4,
+      "change": "pipeline-degree-plus-fixed-four-microbatch-1f1b"
+    },
+    {
+      "id": "PP-B", "display_id": "PP4-2048", "sequence_length": 2048,
+      "parallelism": {"tp": 2, "pp": 2, "dp": 1},
+      "global_batch_size": 4, "pipeline_microbatches": 4,
+      "change": "pipeline-degree-plus-fixed-four-microbatch-1f1b"
+    }
+  ],
+  "allocation_conditioned_timing": {
+    "independent_launches": 5,
+    "minimum_eligible_launches": 4,
+    "minimum_wall_time_warmup_seconds": 10,
+    "conditioning_repetitions": 20,
+    "scoring_repetitions": 40,
+    "case_order_per_sequence": ["tp2-left-tp", "tp4", "tp2-left-dp", "dp2", "tp2-left-pp", "pp2-m4", "tp2-right-pp"],
+    "maximum_adjacent_control_drift_fraction": 0.03,
+    "absolute_prediction": "frozen-ratio-times-immediately-preceding-tp2-control",
+    "observed_ratio_source": "linear-interpolation-between-adjacent-tp2-controls",
+    "retry_policy": "exactly-five-launches-no-retries-no-optional-stopping"
+  },
+  "timing_scope": "steady-state-iteration-device-envelope-only",
+  "timing_thresholds": {
+    "structural_gate_precedes_final_claim": true,
+    "median_absolute_iteration_error_fraction": 0.15,
+    "all_targets_must_pass": true
+  },
+  "artifact_policy": {
+    "v13_certified_ratio_calibration_sha256": "74a1263b6b4cccf4c8a9740031e3681e2d8ac17438bc95bd79b74a39b3fbe97e",
+    "v13_certified_ratio_calibration_job_id": "8361409",
+    "v14_semantic_anchor_graphs_may_be_reused": true,
+    "v14_absolute_anchor_timing_may_be_reused": false,
+    "v14_heldout_target_evidence_opened": false,
+    "ratio_and_structure_freeze_precedes_every_v15_target": true,
+    "absolute_prediction_receipt_precedes_its_target": true,
+    "right_control_cannot_change_the_sealed_prediction": true,
+    "failed_or_abstained_result_is_preserved": true
+  }
+}

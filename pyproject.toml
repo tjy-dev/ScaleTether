@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scaletether"
+version = "0.1.0"
+description = "Graph rewriting and selective timing prediction for Megatron parallelism"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0"]
+authors = [
+  {name = "Yukito Tajima"},
+  {name = "Kazuki Fujii"},
+  {name = "Rio Yokota"},
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+chakra = [
+  "chakra @ git+https://github.com/mlcommons/chakra.git@21585d8f2d65603d791d2121e3d4632351120262",
+  "protobuf==7.35.1",
+]
+
+[project.urls]
+Repository = "https://github.com/tjy-dev/ScaleTether"
+
+[project.scripts]
+compile-megatron-graph = "scaletether.megatron_transformer_graph:main"
+compile-megatron-layout = "scaletether.megatron_layout_transform:main"
+prepare-megatron-counterfactual = "scaletether.megatron_adapter:main"
+search-training-plans = "scaletether.framework_counterfactual:search_main"
+build-astra-service-bundle = "scaletether.astra_service:main"
+
+[tool.setuptools.packages.find]
+include = ["scaletether*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
